@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+img {
+  height: 100px;
+}
+
+.container {
+  width: auto;
+  height: 1000hv; /* This seems to be a typo, should it be 100vh? */
+  margin: auto;
+}
+
+/*The header part and everything in it */
+.home {
+  background-image: url(../images/bac.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 4rem;
+}
+
+.nav {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+li {
+  list-style: none;
+}
+
+.container .home ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button in the header part */
+.mn {
+  background-color: #ff0000;
+  color: #fff;
+  width: 170px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 200px;
+}
+
+.mn:hover {
+  background-color: #000;
+}
+
+.pi {
+  margin-left: 50px;
+}
+
+/* The about part */
+.about {
+  margin-bottom: 4rem;
+}
+
+.abt {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  align-items: center;
+}
+
+/* The button in the about part */
+.btn {
+  background-color: #ff0000;
+  color: #fff;
+  width: 170px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 100px;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+/* The image beside the about */
+.pic {
+  margin-right: 70px;
+  height: 500px;
+}
+
+/* The menu part */
+.menu {
+  margin-bottom: 2rem;
+}
+
+.mi {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* The items of foods in menu */
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ece6e6;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 70px;
+  padding-bottom: 10px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+  background-color: #e4e1e1;
+  border: 1px solid;
+  width: 150px;
+  text-align: center;
+  height: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item1:hover,
+.item2:hover,
+.item4:hover,
+.item5:hover,
+.item6:hover {
+  background-color: #ff0000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.item3:hover {
+  background-color: #ff0000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* food description */
+.men {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 70px;
+  align-items: center;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6 {
+  background-color: #d2bfbf;
+  padding: 20px;
+  border: 1px solid;
+}
+
+/* food description price */
+.col {
+  color: #ff0000;
+}
+
+/* the description and price */
+.h,
+.col {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* The gallery part */
+.gallery {
+  margin-bottom: 2rem;
+}
+
+.im1,
+.im4 {
+  height: 300px;
+  padding: 5px;
+}
+
+.im3,
+.im6 {
+  height: 300px;
+  width: 440px;
+}
+
+.im2,
+.im5 {
+  margin-top: 20px;
+  height: 350px;
+  width: 434px;
+  height: 300px;
+}
+
+/* The reservation part */
+.reserve {
+  background-image: url(../images/bug2.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.r {
+  margin-left: 50px;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+/* reservation form */
+.f {
+  background-color: #fff;
+  margin-right: 70px;
+  height: 67vh;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 400px;
+}
+
+.f h3 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* Reservation button */
+.b {
+  background-color: #ff0000;
+  color: #fff;
+  width: 170px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  text-transform: capitalize;
+  margin-left: 110px;
+}
+
+.b:hover {
+  background-color: #000;
+}
+
+/* Reservation input */
+input {
+  width: 200px;
+  margin-left: 90px;
+  padding: 6px;
+}
+
+/* The option/drop down */
+select {
+  width: 200px;
+  margin-left: 90px;
+  margin-top: 5px;
+  padding: 6px;
+}
+
+/* the blog */
+.blog {
+  margin-bottom: 2rem;
+}
+
+.t {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 70px;
+}
+
+/* image in the blog */
+.k,
+.k2,
+.k3 {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  width: 150px;
+  text-align: center;
+  height: 25px;
+  margin-left: 80px;
+}
+
+.mg {
+  margin-left: 80px;
+}
+
+/* Feedback */
+.fed {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cy {
+  height: 70px;
+  border-radius: 50%;
+}
+
+/* days of opening background*/
+.new {
+  background-color: #ff0000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* main days of opening */
+.open {
+  margin-left: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.open,
+.o {
+  padding: 20px;
+}
+
+.o,
+.l {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* contact */
+.cont {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* comment */
+.let {
+  margin-right: 70px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* input form in comment */
+.in {
+  width: 200px;
+  height: 30px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-right: 90px;
+}
+
+/* Footer */
+.foot {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .nav {
+    font-size: 12px;
+  }
+
+  .pi,
+  .t,
+  h2 {
+    font-size: 18px;
+  }
+
+  .abt {
+    flex-direction: column;
+    font-size: 17px;
+  }
+
+  .abt img {
+    width: 100%;
+  }
+
+  .s1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .item,
+  .men,
+  .reserve,
+  .new {
+    flex-direction: column;
+  }
+
+  .images {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .r {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .f,
+  .let {
+    margin-left: 5rem;
+  }
+
+  .t {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .fed {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
